@@ -19,8 +19,16 @@ namespace HelloWindowsAppBLGSube1
 
         private void btnBaslat_Click(object sender, EventArgs e)
         {
-            var frm=new frmOyun(txtAd.Text,txtSoyad.Text);
-            frm.ShowDialog();
+            if (txtAd.Text == String.Empty || txtSoyad.Text == String.Empty)
+            {
+                MessageBox.Show("Ad ve soyad zorunludur.");
+            }
+            else
+            {
+                var frm = new frmOyun(txtAd.Text, txtSoyad.Text);
+                frm.ShowDialog();
+            }
+
         }
     }
 }
