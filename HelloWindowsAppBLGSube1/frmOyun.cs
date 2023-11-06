@@ -14,9 +14,10 @@ namespace HelloWindowsAppBLGSube1
     {
         int skor = 0;
         int sure = 3;
-        public frmOyun()
+        public frmOyun(string ad,string soyad)
         {
             InitializeComponent();
+            lblKullanici.Text = $"Hoşgeldin, {ad} {soyad}";
         }
 
         private void button1_MouseMove(object sender, MouseEventArgs e)

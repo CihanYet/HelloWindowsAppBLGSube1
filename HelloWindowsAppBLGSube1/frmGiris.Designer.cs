@@ -33,6 +33,7 @@
             this.lblSoyad = new System.Windows.Forms.Label();
             this.txtAd = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.btnBaslat = new System.Windows.Forms.Button();
             this.grpKullanici.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,11 +82,22 @@
             this.txtSoyad.Size = new System.Drawing.Size(100, 20);
             this.txtSoyad.TabIndex = 3;
             // 
+            // btnBaslat
+            // 
+            this.btnBaslat.Location = new System.Drawing.Point(34, 146);
+            this.btnBaslat.Name = "btnBaslat";
+            this.btnBaslat.Size = new System.Drawing.Size(200, 23);
+            this.btnBaslat.TabIndex = 1;
+            this.btnBaslat.Text = "Oyunu Başlat";
+            this.btnBaslat.UseVisualStyleBackColor = true;
+            this.btnBaslat.Click += new System.EventHandler(this.btnBaslat_Click);
+            // 
             // frmGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 303);
+            this.ClientSize = new System.Drawing.Size(276, 205);
+            this.Controls.Add(this.btnBaslat);
             this.Controls.Add(this.grpKullanici);
             this.Name = "frmGiris";
             this.Text = "frmGiris";
@@ -102,5 +114,6 @@
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Label lblSoyad;
         private System.Windows.Forms.Label lblAd;
+        private System.Windows.Forms.Button btnBaslat;
     }
 }

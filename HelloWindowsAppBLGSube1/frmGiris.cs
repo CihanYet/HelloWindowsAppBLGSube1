@@ -16,5 +16,11 @@ namespace HelloWindowsAppBLGSube1
         {
             InitializeComponent();
         }
+
+        private void btnBaslat_Click(object sender, EventArgs e)
+        {
+            var frm=new frmOyun(txtAd.Text,txtSoyad.Text);
+            frm.ShowDialog();
+        }
     }
 }
