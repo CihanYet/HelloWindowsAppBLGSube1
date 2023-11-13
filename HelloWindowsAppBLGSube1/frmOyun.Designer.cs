@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.btnYakala = new System.Windows.Forms.Button();
             this.pnlBilgi = new System.Windows.Forms.Panel();
+            this.lblKullanici = new System.Windows.Forms.Label();
+            this.lblSure = new System.Windows.Forms.Label();
             this.lblSkor = new System.Windows.Forms.Label();
             this.tmrSure = new System.Windows.Forms.Timer(this.components);
-            this.lblSure = new System.Windows.Forms.Label();
-            this.lblKullanici = new System.Windows.Forms.Label();
             this.pnlBilgi.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnYakala
             // 
-            this.btnYakala.Location = new System.Drawing.Point(489, 134);
+            this.btnYakala.Location = new System.Drawing.Point(0, 0);
             this.btnYakala.Name = "btnYakala";
             this.btnYakala.Size = new System.Drawing.Size(75, 70);
             this.btnYakala.TabIndex = 0;
@@ -60,6 +60,23 @@
             this.pnlBilgi.Size = new System.Drawing.Size(148, 450);
             this.pnlBilgi.TabIndex = 1;
             // 
+            // lblKullanici
+            // 
+            this.lblKullanici.AutoSize = true;
+            this.lblKullanici.Location = new System.Drawing.Point(50, 268);
+            this.lblKullanici.Name = "lblKullanici";
+            this.lblKullanici.Size = new System.Drawing.Size(0, 13);
+            this.lblKullanici.TabIndex = 3;
+            // 
+            // lblSure
+            // 
+            this.lblSure.AutoSize = true;
+            this.lblSure.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSure.Location = new System.Drawing.Point(50, 182);
+            this.lblSure.Name = "lblSure";
+            this.lblSure.Size = new System.Drawing.Size(0, 25);
+            this.lblSure.TabIndex = 2;
+            // 
             // lblSkor
             // 
             this.lblSkor.AutoSize = true;
@@ -72,23 +89,6 @@
             // 
             this.tmrSure.Interval = 1000;
             this.tmrSure.Tick += new System.EventHandler(this.tmrSure_Tick);
-            // 
-            // lblSure
-            // 
-            this.lblSure.AutoSize = true;
-            this.lblSure.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSure.Location = new System.Drawing.Point(50, 182);
-            this.lblSure.Name = "lblSure";
-            this.lblSure.Size = new System.Drawing.Size(0, 25);
-            this.lblSure.TabIndex = 2;
-            // 
-            // lblKullanici
-            // 
-            this.lblKullanici.AutoSize = true;
-            this.lblKullanici.Location = new System.Drawing.Point(50, 268);
-            this.lblKullanici.Name = "lblKullanici";
-            this.lblKullanici.Size = new System.Drawing.Size(0, 13);
-            this.lblKullanici.TabIndex = 3;
             // 
             // frmOyun
             // 

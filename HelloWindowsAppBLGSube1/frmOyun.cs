@@ -14,10 +14,25 @@ namespace HelloWindowsAppBLGSube1
     {
         int skor = 0;
         int sure = 20;
-        public frmOyun(string ad, string soyad)
+        public frmOyun(string ad, string soyad, string seviye)
         {
             InitializeComponent();
             lblKullanici.Text = $"Hoşgeldin, {ad} {soyad}";
+            if (seviye=="Kolay") 
+            {
+                this.Size = new Size(300, 300);
+                sure = 30;
+            }
+            else if(seviye=="Orta")
+            {
+                this.Size = new Size(500, 500);
+                sure = 20;
+            }
+            else if(seviye=="Zor")
+            { 
+                this.Size = new Size(800, 800);
+                sure = 10;
+            }
         }
 
         private void button1_MouseMove(object sender, MouseEventArgs e)
@@ -78,5 +93,16 @@ namespace HelloWindowsAppBLGSube1
         {
 
         }
+    }
+
+
+
+    class Bilgisayar
+    {
+        public Bilgisayar(string marka)
+        {
+                this.Marka = marka;
+        }
+        public string Marka { get; set; }
     }
 }

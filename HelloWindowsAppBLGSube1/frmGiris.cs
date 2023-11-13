@@ -25,7 +25,25 @@ namespace HelloWindowsAppBLGSube1
             }
             else
             {
-                var frm = new frmOyun(txtAd.Text, txtSoyad.Text);
+                string seviye;
+                if (rdKolay.Checked)
+                {
+                    seviye = "Kolay";
+                }
+                else if (rdOrta.Checked)
+                {
+                    seviye = "Orta";
+                }
+                else if (rdZor.Checked)
+                {
+                    seviye = "Zor";
+                }
+                else
+                {
+                    MessageBox.Show("Seviye seçiniz!");
+                    return;
+                }
+                var frm = new frmOyun(txtAd.Text, txtSoyad.Text,seviye);                
                 frm.ShowDialog();
             }
 
