@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OyunLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace HelloWindowsAppBLGSube1
 {
     public partial class frmGiris : Form
     {
+
         public frmGiris()
         {
             InitializeComponent();
@@ -25,25 +27,31 @@ namespace HelloWindowsAppBLGSube1
             }
             else
             {
-                string seviye;
+                Level seviye;
                 if (rdKolay.Checked)
                 {
-                    seviye = "Kolay";
+                    seviye = Level.Kolay;
                 }
                 else if (rdOrta.Checked)
                 {
-                    seviye = "Orta";
+                    seviye = Level.Orta;
                 }
                 else if (rdZor.Checked)
                 {
-                    seviye = "Zor";
+                    seviye = Level.Zor;
                 }
                 else
                 {
                     MessageBox.Show("Seviye seçiniz!");
                     return;
                 }
-                var frm = new frmOyun(txtAd.Text, txtSoyad.Text,seviye);                
+
+                var info = new GameInfo();
+                info.Ad = txtAd.Text.Trim();
+                info.Soyad = txtSoyad.Text.Trim();
+                info.Seviye = seviye;
+
+                var frm = new frmOyun(info);             
                 frm.ShowDialog();
             }
 

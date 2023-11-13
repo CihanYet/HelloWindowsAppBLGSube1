@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWindowsAppBLGSube1", "HelloWindowsAppBLGSube1\HelloWindowsAppBLGSube1.csproj", "{836D8B21-52EF-41DC-BA80-9B694AED5F49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OyunLib", "OyunLib\OyunLib.csproj", "{CDE1C950-80FD-436D-A3E6-79070B34EDF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{836D8B21-52EF-41DC-BA80-9B694AED5F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{836D8B21-52EF-41DC-BA80-9B694AED5F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{836D8B21-52EF-41DC-BA80-9B694AED5F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE1C950-80FD-436D-A3E6-79070B34EDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE1C950-80FD-436D-A3E6-79070B34EDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE1C950-80FD-436D-A3E6-79070B34EDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE1C950-80FD-436D-A3E6-79070B34EDF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -124,5 +124,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OyunLib\OyunLib.csproj">
+      <Project>{cde1c950-80fd-436d-a3e6-79070b34edf7}</Project>
+      <Name>OyunLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

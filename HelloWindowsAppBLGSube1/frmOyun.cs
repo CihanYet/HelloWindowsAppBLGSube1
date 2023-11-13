@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OyunLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,29 +10,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HelloWindowsAppBLGSube1
-{
+{//Enum yapıları sabitlerden oluşur.Aynı zamanda veri tipi olarak kullanılır.
+   
+
     public partial class frmOyun : Form
     {
         int skor = 0;
         int sure = 20;
-        public frmOyun(string ad, string soyad, string seviye)
+        public frmOyun(GameInfo bilgi)
         {
             InitializeComponent();
-            lblKullanici.Text = $"Hoşgeldin, {ad} {soyad}";
-            if (seviye=="Kolay") 
+            lblKullanici.Text = $"Hoşgeldin, {bilgi.Ad} {bilgi.Soyad}";
+            switch (bilgi.Seviye)
             {
-                this.Size = new Size(300, 300);
-                sure = 30;
-            }
-            else if(seviye=="Orta")
-            {
-                this.Size = new Size(500, 500);
-                sure = 20;
-            }
-            else if(seviye=="Zor")
-            { 
-                this.Size = new Size(800, 800);
-                sure = 10;
+                case Level.Kolay:
+                    this.Size = new Size(300, 300);
+                    this.sure = 30;
+                    break;
+                case Level.Orta:
+                    this.Size = new Size(500, 500);
+                    this.sure = 20;
+                    break;
+                case Level.Zor:
+                    this.Size = new Size(800, 800);
+                    this.sure = 10;
+                    break;
+                default:
+                    break;
             }
         }
 
@@ -101,7 +106,7 @@ namespace HelloWindowsAppBLGSube1
     {
         public Bilgisayar(string marka)
         {
-                this.Marka = marka;
+            this.Marka = marka;
         }
         public string Marka { get; set; }
     }
